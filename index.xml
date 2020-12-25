@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aneesh Nema</title>
+    <link>https://aneeshnema.github.io/</link>
+    <description>Recent content on Aneesh Nema</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aneeshnema.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transparent Comparators C&#43;&#43;</title>
+      <link>https://aneeshnema.github.io/posts/transparent-comparators/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aneeshnema.github.io/posts/transparent-comparators/</guid>
+      <description>A brief guide to transparent comparators in C++</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://aneeshnema.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aneeshnema.github.io/about/</guid>
+      <description>Under Construction 🚧</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://aneeshnema.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aneeshnema.github.io/search/</guid>
+      <description>search</description>
+    </item>
+    
+  </channel>
+</rss>
