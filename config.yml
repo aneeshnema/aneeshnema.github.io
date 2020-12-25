@@ -1,0 +1,108 @@
+baseURL: "https://aneeshnema.github.io"
+title: "Aneesh Nema"
+paginate: 5
+theme: hugo-PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-185810261-1
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: "Aneesh Nema"
+    description: "Personal webiste of Aneesh Nema"
+    author: "Aneesh Nema"
+
+    images: "/android-chrome-512x512.png"
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    comments: false
+    defaultTheme: auto
+    disableThemeToggle: false
+    disableSpecial1stPost: false
+
+    assets:
+        favicon: "/favicon.ico"
+        favicon16x16:  "/favicon-16x16.png"
+        favicon32x32:  "/favicon-32x32.png"
+        apple_touch_icon:  "/apple-touch-icon.png"
+        safari_pinned_tab:  "/safari-pinned-tab.svg"
+
+    label:
+        text: "Aneesh Nema"
+        # icon: /apple-touch-icon.png
+        iconHeight: 35
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: "Aneesh Nema"
+        subtitle: "Hello there"
+        imageUrl: "/profile.jpg"
+        imageTitle: "me"
+        # buttons:
+        #     - name: Posts
+        #       url: posts
+        #     - name: Tags
+        #       url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Hi there \U0001F44B"
+        Content: "Welcome to my blog"
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/aneeshnema"
+        - name: linkedin
+          url: "https://linkedin.com/in/aneesh-nema"
+
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
+    
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+menu:
+    main:
+        - identifier: about
+          name: About Me
+          url: /about/
+        - identifier: posts
+          name: Posts
+          url: /posts/
+        # - identifier: categories
+        #   name: categories
+        #   url: /categories/
+        - identifier: search
+          name: Search
+          url: /search/
+        - identifier: tags
+          name: Tags
+          url: /tags/
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

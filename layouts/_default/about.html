@@ -1,0 +1,30 @@
+{{- define "main" }}
+
+<div class="profile about">
+  {{- with .Site.Params.profileMode }}
+  <div class="profile_inner">
+    {{- if .imageUrl}}<img src="{{ .imageUrl}}" alt="{{ .imageTitle | default " profile image" }}"
+      height="{{- .imageHeight | default 150 -}}" width="{{- .imageWidth | default 150 -}}" />{{- end}}
+    {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+
+    {{- with .buttons }}
+    <div class="buttons">
+      {{- range . -}}
+      <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | humanize }}">
+        <span class="button-inner">{{ .name }}</span>
+      </a>
+      {{- end -}}
+    </div>
+    {{- end }}
+  </div>
+  {{- end}}
+  <div class="about_intro">
+    {{.Params.intro}}
+  </div>
+</div>
+<br>
+<div>
+  {{.Content}}
+</div>
+
+{{- end }}{{- /* end main */ -}}
